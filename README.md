@@ -28,8 +28,8 @@ import hmac
 import hashlib
 
 def generate_signature(secret: str, body: bytes, timestamp: str) -> str:
-    message = timestampd.encode() + body
-    signature - hmac.new(secret, message, hashlib.sha256).hexdigest()
+    message = timestamp.encode() + body
+    signature - hmac.new(secret, body, hashlib.sha256).hexdigest()
     return signature
 ```
 
